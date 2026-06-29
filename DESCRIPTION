@@ -1,0 +1,27 @@
+Package: rmetal
+Title: RealityKit Backed Compatibility Layer for rgl-Style 3D Scenes
+Version: 0.3.2
+Authors@R:
+    person("Cornel", "Pop", email = "cornel.pop@gmail.com",
+    role = c("aut", "cre", "cph"),
+    comment = c("Package concept, compatibility target, testing, release selection, and maintenance. Implementation developed with substantial AI assistance using OpenAI Codex."))
+Author: Cornel Pop [aut, cre]
+Maintainer: Cornel Pop <cornel.pop@gmail.com>
+Description: Provides an rgl-style 3D scene API backed by Swift and
+    Apple's RealityKit/Metal stack. The package focuses first on the
+    functions needed by Lithics3D.
+License: file LICENSE
+Encoding: UTF-8
+Depends:
+    R (>= 4.2.0)
+Imports:
+    jsonlite,
+    stats,
+    tools
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+SystemRequirements: macOS 13 or later with Xcode or Xcode Command Line Tools
+    providing swiftc and the RealityKit framework
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2

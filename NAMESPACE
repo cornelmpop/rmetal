@@ -1,0 +1,4 @@
+export(.check3d)
+export("%>%")
+export("%||%")
+exportPattern("^[[:alpha:]]")
