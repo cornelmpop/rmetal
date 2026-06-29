@@ -390,7 +390,7 @@ columns \code{function_name}, \code{status}, and \code{notes}. Unsupported
 compatibility stubs return \code{invisible(NULL)} after warning.
 }
 \section{Installation from GitHub}{
-Install from \url{https://github.com/cornelmpop/rmetal} with:
+Install from GitHub with:
 
 \preformatted{
 install.packages("remotes")
