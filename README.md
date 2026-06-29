@@ -1,19 +1,10 @@
 # rmetal
 
-`rmetal` is an experimental `rgl`-style compatibility layer for macOS systems
-where OpenGL-based `rgl` rendering is deprecated, fragile, or no longer viable
-for some workflows, especially on macOS Tahoe. It keeps the familiar R API
+`rmetal` is an experimental, Lithics3D-focused drop-in replacement for the
+macOS version of the `rgl` R package. It keeps the familiar R API
 (`shade3d()`, `points3d()`, `lines3d()`, `scene3d()`, and friends), while the
 live viewer is implemented in Swift and targets Apple's RealityKit/Metal
 stack.
-
-The first supported contract is the `rgl` surface used by `Lithics3D`:
-
-- `shade3d()` for `mesh3d` objects
-- `points3d()`, `lines3d()`, `segments3d()`, `text3d()`
-- window lifecycle helpers such as `open3d()`, `cur3d()`, `close3d()`
-- scene inspection helpers such as `scene3d()`, `ids3d()`, `tagged3d()`
-- test helpers such as `expect_known_scene()`
 
 ## Disclaimer
 
@@ -31,8 +22,7 @@ release decisions, and maintenance are mine. The implementation was developed
 with substantial assistance from OpenAI Codex, including code generation and
 iterative debugging. Because `rmetal` was developed as a pragmatic compatibility
 bridge with substantial AI-assisted implementation, it should not be seen as
-representative of my usual development model for research software that I design,
-implement, and maintain directly.
+representative of my usual development model for research software.
 
 I am making the package public because it may help users who would otherwise
 be blocked from using `Lithics3D` on recent macOS systems. Users should treat it as experimental
